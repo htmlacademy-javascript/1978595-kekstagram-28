@@ -1,3 +1,1 @@
-import {getPhotoAttributesArray} from './photo-attributes-generation.js';
-
-getPhotoAttributesArray();
+import './thumbnails.js';
