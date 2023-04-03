@@ -38,7 +38,7 @@ const getPhotoAttributes = () => ({
   url: `photos/${getIdForUrl()}.jpg`,
   description: descriptions[getRandomInteger(0, descriptions.length - 1)],
   likes: getRandomInteger(15, 200),
-  comment: [getComment()]
+  comment: [getComment(),getComment()]
 });
 
 const getPhotoAttributesArray = () => {
