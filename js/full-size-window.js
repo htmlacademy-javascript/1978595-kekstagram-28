@@ -19,8 +19,9 @@ const fullWindowClose = (evt) => {
 
 
 const fullWindowOpen = (evt) => {
-  evt.preventDefault();
+
   if (evt.target.nodeName === 'IMG') {
+    evt.preventDefault();
     const photoId = Number(evt.target.parentNode.getAttribute('id'));
     const photoData = pictures.find((el) => el.id === photoId);
     const bigPictureImg = bigPictureWindow.querySelector('.big-picture__img img');
